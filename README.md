@@ -13,6 +13,21 @@ using NumPy, pandas, and statsmodels.
 | `notebooks/drawdowns.ipynb` | Computes drawdowns and drawdown *duration* from a price series using an expanding-maximum peak, and plots both. |
 | `notebooks/capm_regression.ipynb` | Runs an OLS single-factor regression of a stock's returns on the market (SPY) with statsmodels, decomposes beta vs. alpha contributions, and computes an annualized information ratio and alpha t-stat. |
 
+## Exercises
+
+Practice problems worked through while studying quantitative methods, in order of
+increasing depth. Code is my own; problem prompts are paraphrased in my own words.
+
+| Notebook | What it covers |
+|----------|----------------|
+| `exercises/01_python_finance_fundamentals.ipynb` | Dollar P&L, performance stats, and signal analysis using core Python. |
+| `exercises/02_pandas_performance_stats.ipynb` | The same in pandas: vectorized P&L, annualized return/vol/Sharpe/hit-rate, and a cross-sectional reversal signal. |
+| `exercises/03_momentum_strategy_backtest.ipynb` | An end-to-end momentum backtest: 252-day Sharpe signal, equal-weight long portfolio, and annualized/per-year Sharpe, correlations, and cumulative returns. |
+| `exercises/04_point_in_time_residual_returns.ipynb` | Rolling-window beta estimation against a benchmark to compute point-in-time, beta-adjusted residual returns without lookahead. |
+
+The exercise notebooks import the `yahoo.py` downloader from the repo root, so run them
+from the repo root (or add the root to your path).
+
 ## Quick start
 
 ```bash
